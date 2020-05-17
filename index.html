@@ -9,36 +9,23 @@
 </head>
 
 <body>
-    <main class="container">
-        <!-- <fieldset> -->
-            <label for="howManyRolls">How many rolls?</label>
-            <input type="text" id="howManyRolls" name="howManyRolls">
-            <button id="rollDie">Roll!</button> <br><br>
-            <div id="rollTotal">The sum of rolls is <span id="numRollTotal">0</span></div> <br><br>
+    <main class="mainContainer">
+        <fieldset class="diceContainer">
+            <label for="howManyDice">How many dice to roll?</label>
+            <input type="text" id="howManyDice" name="howManyDice">
+            <button id="rollDice">Roll!</button> 
+            <br><br>
+            <div id="rollTotal">Total is <span id="numRollTotal">0</span></div> 
+            <br>
 
             <button id="showAll">Show All Rolls</button>
-        <!-- </fieldset> -->
+        </fieldset>
 
-        <div id="allRolls">
+        <div class="allRollsContainer">
             <ol id="eachRoll">
-
-
 
             </ol>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </main>
     <script src="./assets/javascript/main.js"></script>

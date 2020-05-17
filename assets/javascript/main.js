@@ -1,40 +1,54 @@
 let dieRolls = []
-const rollDieButton = document.querySelector('#rollDie')
-const numRollsInput = document.querySelector('#howManyRolls')
+let index = 0
+const rollDiceButton = document.querySelector('#rollDice')
+const numDiceInput = document.querySelector('#howManyDice')
 const rollTotalOutput = document.querySelector('#numRollTotal')
 const allRollsButton = document.querySelector('#showAll')
-let numDieSides = 5
+const allRollsContainer = document.querySelector('.allRollsContainer')
+const eachRollList = document.querySelector('#eachRoll')
+let numDiceSides = 5
 let numRolls
-let index = 0
 let rollCount = 0
-let sumDieRolls
+let sumDiceRolls
 
-rollDieButton.addEventListener('click', function () {
+rollDiceButton.addEventListener('click', function () {
     console.log('roll button clicked')
-    numRolls = (numRollsInput.value)
+    numRolls = (numDiceInput.value)
     console.log(numRolls)
 
     while (rollCount < numRolls) {
 
-        let eachDieRoll = (Math.round(Math.random() * numDieSides) + 1)
+        let eachDieRoll = (Math.round(Math.random() * numDiceSides) + 1)
         console.log(eachDieRoll)
 
         dieRolls.push(eachDieRoll)
         console.log(dieRolls)
 
-        sumDieRolls = dieRolls.reduce(function (total, amount) {
+        sumDiceRolls = dieRolls.reduce(function (total, amount) {
             return total + amount
 
         })
 
         rollCount++
 
-        console.log(sumDieRolls)
-        rollTotalOutput.innerHTML = sumDieRolls
+        console.log(sumDiceRolls)
+        rollTotalOutput.innerHTML = sumDiceRolls
     }
-    
+
 })
-    // const allRollsButton = document.querySelector('#showAll')
-    allRollsButton.addEventListener('click', function() {
-        console.log('show all rolls button clicked')
-    })
+
+allRollsButton.addEventListener('click', function () {
+    console.log('show all rolls button clicked')
+
+    while (index < dieRolls.length) {
+
+        let singleRoll = dieRolls[index]
+        console.log(singleRoll)
+        const singleRollList = '<li class=dice>' + singleRoll + '</li>'
+
+        eachRollList.innerHTML += singleRollList
+
+        index++
+    }
+
+})

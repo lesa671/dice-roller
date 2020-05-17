@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;  
+}
+
+.diceContainer {
+    /* display: flex; */
+    border: 0px;
+    margin: 0px;
+    background-color: plum;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 20px;
+}
+
+#rollDice, #showAll, #howManyDice {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 20px;
+}
+   
+#howManyDice {
+    height: 23.33px;
+    width: 150px;
+}
+
+.allRollsContainer {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(72, 21, 92);
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    /* height: 200px; */
+    /* border: 1px solid purple */
+}
