@@ -2,20 +2,28 @@
     box-sizing: border-box;  
 }
 
+html{
+    display: flex;
+}
+
 .diceContainer {
     /* display: flex; */
     border: 0px;
     margin: 0px;
-    background-color: plum;
+    background-color: rgb(198, 149, 218);
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     font-size: 20px;
 }
 
-#rollDice, #showAll, #howManyDice {
+#rollDice, #showAll, #howManyDice, #reset {
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     font-size: 20px;
+}
+
+#rollDice, #showAll, #reset {
+    border: 2px solid purple;
 }
    
 #howManyDice {
@@ -26,10 +34,23 @@
 .allRollsContainer {
     display: flex;
     flex-direction: column;
-    background-color:rgb(72, 21, 92);
+    background-color:rgb(184, 102, 216);
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+    color: black;
     /* height: 200px; */
     /* border: 1px solid purple */
+}
+
+.allRollsContainer li { 
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    padding-top: 8px;
+    padding-left: 13px;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px; 
 }
