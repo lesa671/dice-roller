@@ -11,12 +11,19 @@
 <body>
     <main class="mainContainer">
         <fieldset class="diceContainer">
+
+            <label for="howManyDiceSides">How many sides on your dice?</label>
+            <input type="number" id="howManyDiceSides" name="howManyDiceSides" placeholder="Number between 6 and 20" min="6" max="20">
+
             <label for="howManyDice">How many dice to roll?</label>
             <input type="text" id="howManyDice" name="howManyDice">
-            <button id="rollDice">Roll!</button> 
+            <button id="rollDice">Roll!</button>
+
+
+
             <br><br>
-            <div id="rollTotal">Total is <span id="numRollTotal">0</span></div> 
-            <br>
+            <div id="rollTotal">Total is <span id="numRollTotal">0</span></div>
+            <br><br>
             <button id="showAll">Show All Rolls</button>
             <button id="reset">Reset</button>
         </fieldset>
