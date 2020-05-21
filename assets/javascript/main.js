@@ -39,7 +39,7 @@ rollDiceButton.addEventListener('click', function () {
             console.log(sumDiceRolls);
 
         } else {
-            diceSidesInput.value = ' '
+            diceSidesInput.value = ''
             numDiceInput.value = ' '
             sumDiceRolls = 0
             numRolls = 0
@@ -79,7 +79,5 @@ resetButton.addEventListener('click', function () {
     eachRollList.innerHTML = ' '
     rollCount = 0
     index = 0
-    diceSidesInput.value = ' '
+    diceSidesInput.value = ''
 })
-
-
